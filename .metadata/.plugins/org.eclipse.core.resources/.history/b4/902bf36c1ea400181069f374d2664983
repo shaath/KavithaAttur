@@ -1,0 +1,19 @@
+package day9;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class WebdriverwaitEg {
+
+	public static void main(String[] args)
+	{
+		WebDriver driver=new FirefoxDriver();
+		driver.get("https://www.24hourfitness.com");
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.xpath("//*[@id='slide 1']")).click();
+
+	}
+
+}
